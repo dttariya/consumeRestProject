@@ -21,7 +21,7 @@ public class Score {
 		
 		WebTarget target=client.target("http://localhost:8080/simple-service-webapp/game/score");
 		
-		//3.getting response from the resource.
+		//3.getting response from the resource..
 		System.out.println(
 				target.request(MediaType.TEXT_XML).get(String.class)
 		);
