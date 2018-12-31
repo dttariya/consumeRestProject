@@ -14,14 +14,14 @@ public class Score {
          //1.create a client instance using the default ClientBuilder implementation class.
 		Client client=ClientBuilder.newClient();
 		
-		//2.set a target to the client
+		//2.set a target to the client.
 		//The WebTarget interface represents a specific URI you want to invoke on. 
 		//Through the Client interface, you can create a WebTarget 
 		//using one of the target() methods
 		
 		WebTarget target=client.target("http://localhost:8080/simple-service-webapp/game/score");
 		
-		//3.getting response from the resource
+		//3.getting response from the resource..
 		System.out.println(
 				target.request(MediaType.TEXT_XML).get(String.class)
 		);
